@@ -27,7 +27,7 @@ h2{font-size:21px;margin:0 0 12px}
 p{margin:10px 0}
 ul{padding-left:22px}
 li{margin:7px 0}
-a{color:var(--accent)}
+a{color:var(--accent);overflow-wrap:anywhere}
 code{overflow-wrap:anywhere;background:var(--soft);padding:2px 5px;border-radius:5px}
 .note{border-left:4px solid var(--accent);padding-left:14px;color:var(--muted)}
 footer{color:var(--muted);text-align:center;padding:25px}
@@ -53,8 +53,8 @@ main>div{scroll-margin-top:90px}
 <div id="pt">
 <div class="hero">
 <h1>Política de Privacidade do EQTune</h1>
-<p class="meta">Vigência: 6 de novembro de 2026 · Última atualização: 6 de novembro de 2026</p>
-<p class="note">Esta política descreve o funcionamento atual do EQTune e os serviços do Android usados pelo aplicativo.</p>
+<p class="meta">Vigência: 6 de novembro de 2026 · Última atualização: 11 de novembro de 2026</p>
+<p class="note">Esta política descreve o funcionamento atual do EQTune e os serviços do Android e de terceiros usados pelo aplicativo.</p>
 </div>
 <section>
 <h2>1. Quem somos</h2>
@@ -71,7 +71,8 @@ main>div{scroll-margin-top:90px}
 <li>A análise de áudio da IA é feita no aparelho. O áudio é analisado em memória e descartado; o microfone não é usado.</li>
 <li><strong>Voz:</strong> ao ditar um ajuste, o EQTune pede ao serviço de voz instalado no aparelho um reconhecimento offline e recebe somente a transcrição. O serviço de voz pode, ainda assim, processar o áudio remotamente, nos servidores dele, conforme a política dele.</li>
 <li><strong>Backup:</strong> o backup do Android pode copiar seus presets e preferências gerais para a sua conta Google. O perfil tonal da IA e os nomes dos seus fones ficam fora do backup.</li>
-<li>Esta versão do EQTune não exibe anúncios e não usa ferramentas de analytics, rastreamento ou relatório de falhas.</li>
+<li>O EQTune exibe anúncios do Google AdMob: um banner na tela Início. O SDK de anúncios do Google pode coletar dados do aparelho, como o endereço IP e identificadores de publicidade (seção 12). Onde a legislação exige, o app apresenta as escolhas de consentimento antes de qualquer anúncio (seção 13).</li>
+<li>Não há ferramentas próprias de analytics, rastreamento ou relatório de falhas da Alleryon Labs.</li>
 </ul>
 </section>
 <section>
@@ -92,6 +93,7 @@ main>div{scroll-margin-top:90px}
 <li>Perfil tonal da IA: quatro médias de nível por faixa de frequência (graves, médio-graves, presença e agudos) e o tempo já analisado. O perfil não contém áudio nem nomes de músicas e pode ser apagado em Ajustes › Dados › Apagar perfil tonal.</li>
 <li>Preferências do app: tema, idioma e modo avançado.</li>
 <li>Arquivos temporários: o arquivo de um preset exportado, enquanto você o compartilha.</li>
+<li>Anúncios: as escolhas de consentimento registradas pela UMP e os dados técnicos guardados pelo SDK de anúncios do Google (seções 12 e 13).</li>
 </ul>
 <p>Esses dados ficam na área privada do EQTune e são removidos quando você limpa os dados do app ou o desinstala.</p>
 </section>
@@ -110,7 +112,7 @@ main>div{scroll-margin-top:90px}
 </section>
 <section>
 <h2>7. Bluetooth e fones</h2>
-<p>Com a permissão de dispositivos próximos, o EQTune obtém o nome do fone conectado, o tipo de conexão e o nível de bateria informado pelo fone. O nome é usado para reconhecer o modelo no catálogo embutido no app e para lembrar a curva e o preset de cada fone. Essas preferências ficam só no aparelho, fora do backup, e não aparecem nos registros técnicos do app.</p>
+<p>Com a permissão de dispositivos próximos, o EQTune obtém o nome do fone conectado, o tipo de conexão e o nível de bateria informado pelo fone. O nome é usado para lembrar o perfil, a curva e o preset de cada fone e para conferir se a curva escolhida é do mesmo modelo. Essas preferências ficam só no aparelho, fora do backup, e não aparecem nos registros técnicos do app.</p>
 </section>
 <section>
 <h2>8. Reconhecimento de voz</h2>
@@ -127,64 +129,95 @@ main>div{scroll-margin-top:90px}
 </section>
 <section>
 <h2>10. Backup e transferência do Android</h2>
-<p>Se o backup estiver ativado no seu aparelho, o Android pode copiar para a sua conta Google, e para um novo aparelho numa transferência, os seus presets, curvas importadas e preferências gerais (tema, modo avançado, opções e ajustes por estilo da IA e preset do alto-falante). A configuração do EQTune exclui dessas rotinas o perfil tonal da IA e as preferências com o nome dos seus fones. O backup é feito pelo sistema, conforme as configurações e a política do Google, e pode ser desativado nas configurações do Android.</p>
+<p>Se o backup estiver ativado no seu aparelho, o Android pode copiar para a sua conta Google, e para um novo aparelho numa transferência, os seus presets, curvas importadas e preferências gerais (tema, modo avançado, opções e ajustes por estilo da IA e preset do alto-falante). Também podem entrar as escolhas de consentimento de anúncios e os dados técnicos que os SDKs do Google guardam nas preferências do app. A configuração do EQTune exclui dessas rotinas o perfil tonal da IA e as preferências com o nome dos seus fones. O backup é feito pelo sistema, conforme as configurações e a política do Google, e pode ser desativado nas configurações do Android.</p>
 </section>
 <section>
 <h2>11. Conteúdo e bibliotecas de terceiros</h2>
-<p>O EQTune inclui, para uso no próprio aparelho, a biblioteca de presets OPRA (CC BY-SA 4.0), dados do projeto AutoEQ (MIT), o modelo de áudio YAMNet (Apache 2.0) e um catálogo de curvas de medição. Esses componentes não coletam nem enviam informações. Os créditos e as licenças estão em Sobre o EQTune › Licenças e créditos.</p>
+<p>O EQTune inclui, para uso no próprio aparelho, a biblioteca de presets OPRA (CC BY-SA 4.0), dados do projeto AutoEQ (MIT), o modelo de áudio YAMNet e o LiteRT (Apache 2.0). Esses componentes não coletam nem enviam informações. O app também inclui os SDKs de anúncios e de consentimento do Google, descritos nas seções 12 e 13. Os créditos e as licenças estão em Sobre o EQTune › Licenças e créditos.</p>
 </section>
 <section>
-<h2>12. Publicidade</h2>
-<p>Esta versão do EQTune não exibe anúncios e não inclui bibliotecas de publicidade. Se anúncios forem incluídos, esta política será atualizada antes, com o parceiro de anúncios, os dados usados e as suas escolhas.</p>
+<h2>12. Publicidade: Google AdMob</h2>
+<p>O EQTune é gratuito e exibe anúncios do Google AdMob: um único banner, no fim da tela Início. Não há anúncios em tela cheia, premiados, nativos nem anúncios na abertura do app. Nenhum anúncio aparece no visualizador em tela cheia, nas outras telas ou nos serviços que mantêm o som funcionando (EQ no sistema e IA).</p>
+<p>O SDK de anúncios do Google (Google Mobile Ads SDK) funciona dentro do app e se comunica diretamente com o Google. Segundo a documentação do Google, o SDK pode coletar e compartilhar automaticamente com o Google, para publicidade, análise e prevenção de fraudes:</p>
+<ul>
+<li>o endereço IP, que pode ser usado para estimar a localização aproximada do aparelho;</li>
+<li>interações com o app e com os anúncios, como abertura do app, toques e visualizações;</li>
+<li>informações de diagnóstico, como o tempo de abertura do app, travamentos e o uso de energia;</li>
+<li>identificadores do aparelho, como o ID de publicidade do Android, quando disponível, e o ID do conjunto de apps.</li>
+</ul>
+<p>Segundo o Google, esses dados são criptografados em trânsito. O SDK também guarda no aparelho, nas preferências do app, dados técnicos próprios.</p>
+<p>O EQTune não pede permissão de localização ao Android. Por isso, nem o app nem o SDK de anúncios têm acesso à localização precisa do aparelho (GPS ou rede): a localização que pode ser associada aos anúncios é a aproximada, estimada pelo Google a partir do endereço IP. A mensagem de consentimento do Google pode listar finalidades declaradas pelos parceiros de anúncios, como o uso de dados de geolocalização precisa; no EQTune, esses dados não estão disponíveis.</p>
+<p>O EQTune não envia ao Google, para fins de publicidade, o seu áudio, a análise da IA, presets, curvas, nomes de fones, as músicas tocando nem transcrições de voz. O app pede somente anúncios adequados a adolescentes (classificação "T", Teen, do Google) e não é marcado como direcionado a crianças (seção 20).</p>
+<p>O Google trata esses dados conforme as próprias políticas. A Alleryon Labs pode acessar os relatórios e as informações que o Google disponibiliza no AdMob, conforme as configurações e as funções do serviço.</p>
+<ul>
+<li>Política de Privacidade do Google: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+<li>Como o Google usa informações de apps e sites parceiros: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Minha Central de Anúncios: <a href="https://myadcenter.google.com/" rel="noopener">https://myadcenter.google.com/</a></li>
+</ul>
 </section>
 <section>
-<h2>13. Finalidades do tratamento</h2>
-<p>O EQTune trata informações somente no aparelho e somente para executar as funções que você usa: equalizar o som, lembrar presets e preferências, reconhecer o seu fone, mostrar o que está tocando, aplicar a IA e transformar pedidos de ajuste em filtros.</p>
+<h2>13. Escolhas de privacidade e consentimento</h2>
+<p>O EQTune integra a User Messaging Platform (UMP) do Google para apresentar, quando aplicável, escolhas de consentimento e de privacidade relacionadas à publicidade. A exigência, a disponibilidade e o conteúdo dessas opções variam conforme a sua região e as configurações do Google — por exemplo, no Espaço Econômico Europeu, no Reino Unido e na Suíça.</p>
+<ul>
+<li>A cada abertura, o EQTune atualiza as informações de consentimento antes de pedir qualquer anúncio. Se a atualização não for possível (por exemplo, sem conexão) e ainda não houver uma escolha registrada, nenhum anúncio é pedido.</li>
+<li>Dependendo das suas escolhas e da sua região, o Google pode exibir anúncios personalizados, não personalizados ou limitados.</li>
+<li>Quando exigido pela UMP, o EQTune disponibiliza Escolhas de privacidade em Ajustes (seção Dados), para que as escolhas possam ser revistas a qualquer momento.</li>
+<li>As escolhas ficam registradas no aparelho pela UMP.</li>
+<li>O ID de publicidade pode ser redefinido ou excluído nas configurações do Android (em Privacidade › Anúncios ou Google › Anúncios, conforme o aparelho).</li>
+</ul>
 </section>
 <section>
-<h2>14. Com quem as informações podem ser compartilhadas</h2>
-<p>A Alleryon Labs não recebe informações do EQTune. Saem do aparelho somente:</p>
+<h2>14. Finalidades do tratamento</h2>
+<p>O EQTune trata ou transmite informações apenas conforme necessário para executar as funções que você usa — equalizar o som, lembrar presets e preferências, reconhecer o seu fone, mostrar o que está tocando, aplicar a IA e transformar pedidos de ajuste em filtros — e para viabilizar a publicidade e as suas escolhas de privacidade (seções 12 e 13). Dependendo da jurisdição, o tratamento pode se apoiar na sua solicitação, no consentimento, em obrigações legais ou em outras bases previstas pela legislação aplicável.</p>
+</section>
+<section>
+<h2>15. Com quem as informações podem ser compartilhadas</h2>
+<p>O EQTune não envia à Alleryon Labs informações sobre você. Saem do aparelho somente:</p>
 <ul>
 <li>o áudio da sua voz, processado pelo serviço de reconhecimento de voz que você usar (seção 8);</li>
 <li>os dados incluídos no backup do Android, quando ativado (seção 10);</li>
-<li>os arquivos e valores que você decidir exportar, compartilhar ou copiar (seção 9).</li>
+<li>os arquivos e valores que você decidir exportar, compartilhar ou copiar (seção 9);</li>
+<li>os dados tratados pelos SDKs de anúncios e de consentimento do Google, conforme as suas escolhas (seções 12 e 13).</li>
 </ul>
 <p>A Alleryon Labs não vende dados pessoais.</p>
 </section>
 <section>
-<h2>15. Transferências internacionais</h2>
-<p>O EQTune não transfere informações. O serviço de reconhecimento de voz e o backup do Android, quando usados, são prestados por terceiros, como o Google, que podem processar informações em países diferentes do seu, conforme as próprias políticas.</p>
+<h2>16. Transferências internacionais</h2>
+<p>O EQTune não tem servidor próprio e não transfere informações para a Alleryon Labs. Saem do aparelho somente as informações descritas na seção 15: os dados tratados pelos SDKs de anúncios e de consentimento do Google, o áudio da sua voz quando o serviço de reconhecimento de voz o processa fora do aparelho, os dados do backup do Android e os arquivos que você decidir exportar ou compartilhar com outro app ou serviço. Ao usar "Copiar valores", os valores do equalizador vão apenas para a área de transferência do próprio aparelho; eles só saem dele se você os colar em outro app ou serviço. O Google e os demais prestadores desses serviços podem processar essas informações em países diferentes do seu, conforme as próprias políticas. Os arquivos que você compartilha vão para o destino que você escolher e seguem as regras desse destino.</p>
 </section>
 <section>
-<h2>16. Retenção</h2>
+<h2>17. Retenção</h2>
 <ul>
 <li>Presets, curvas e preferências: até você apagá-los, limpar os dados do app ou desinstalá-lo.</li>
 <li>Perfil tonal: até você usar Apagar perfil tonal, limpar os dados do app ou desinstalá-lo.</li>
 <li>Arquivos exportados temporários: até serem removidos pelo app ou pelo Android.</li>
 <li>Informações da música tocando e transcrições de voz: não são guardadas.</li>
+<li>Escolhas de consentimento de anúncios: no aparelho, até você mudá-las, limpar os dados do app ou desinstalá-lo.</li>
+<li>Dados coletados pelo SDK de anúncios: conforme as políticas de retenção do Google.</li>
 </ul>
-<p>Dados tratados pelo serviço de voz e pelo backup do Android seguem as práticas e políticas de quem presta esses serviços.</p>
+<p>Dados tratados pelo Google para anúncios, pelo serviço de voz e pelo backup do Android seguem as práticas e políticas de quem presta esses serviços.</p>
 </section>
 <section>
-<h2>17. Segurança</h2>
-<p>Os dados locais ficam na área privada do EQTune, protegida pelo Android. O app não transmite esses dados pela rede. Os registros técnicos do app não incluem nomes de fones nem títulos de músicas. Nenhum sistema é totalmente imune a falhas.</p>
+<h2>18. Segurança</h2>
+<p>Os dados locais ficam na área privada do EQTune, protegida pelo Android. O app não transmite esses dados pela rede. A comunicação do SDK de anúncios com o Google é criptografada (TLS). Os registros técnicos do app não incluem nomes de fones nem títulos de músicas. Nenhum sistema é totalmente imune a falhas.</p>
 </section>
 <section>
-<h2>18. Seus direitos e escolhas</h2>
-<p>No próprio app ou aparelho você pode apagar presets e curvas, apagar o perfil tonal em Ajustes › Dados, desligar a IA, revogar as permissões de áudio, Bluetooth e acesso a notificações, desativar o backup do Android, limpar os dados do app e desinstalar o EQTune.</p>
+<h2>19. Seus direitos e escolhas</h2>
+<p>No próprio app ou aparelho você pode apagar presets e curvas, apagar o perfil tonal em Ajustes › Dados, desligar a IA, revogar as permissões de áudio, Bluetooth e acesso a notificações, desativar o backup do Android, rever as escolhas de anúncios em Ajustes › Escolhas de privacidade (quando exigido na sua região, seção 13), redefinir ou excluir o ID de publicidade nas configurações do Android, limpar os dados do app e desinstalar o EQTune.</p>
 <p>Dependendo da legislação aplicável à sua região, você também pode ter direitos relacionados a acesso, correção, exclusão, oposição, restrição, portabilidade, retirada de consentimento e reclamação perante autoridade competente.</p>
 <p>A Alleryon Labs não mantém conta EQTune nem banco de dados de usuários. Para dúvidas ou solicitações relacionadas ao EQTune, escreva para <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a>. Quando uma solicitação envolver dados controlados diretamente por um terceiro, poderemos indicar o serviço correspondente.</p>
 </section>
 <section>
-<h2>19. Crianças</h2>
+<h2>20. Crianças</h2>
 <p>O EQTune é destinado a usuários com 13 anos ou mais e não é direcionado especificamente a crianças. O aplicativo não solicita idade ou data de nascimento e não possui recursos criados especificamente para público infantil. Usuários menores de idade devem observar as regras aplicáveis em seu país e, quando necessário, utilizar o app com autorização de um responsável.</p>
+<p>Por isso, nos anúncios, o EQTune não é marcado como direcionado a crianças, e os anúncios pedidos são limitados a conteúdo adequado a adolescentes (classificação T, "Teen", do Google).</p>
 </section>
 <section>
-<h2>20. Alterações nesta política</h2>
+<h2>21. Alterações nesta política</h2>
 <p>Esta política pode ser atualizada quando o EQTune ou os serviços utilizados mudarem. A versão vigente fica disponível nesta página e no próprio aplicativo (Sobre o EQTune), com a data de última atualização. Como o EQTune não possui cadastro próprio, não enviamos avisos por e-mail a todos os usuários.</p>
 </section>
 <section>
-<h2>21. Contato</h2>
+<h2>22. Contato</h2>
 <p>EQTune</p>
 <p>Publicado sob o nome de desenvolvedor Alleryon Labs</p>
 <p>E-mail: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
@@ -194,8 +227,8 @@ main>div{scroll-margin-top:90px}
 <div id="en" hidden>
 <div class="hero">
 <h1>EQTune Privacy Policy</h1>
-<p class="meta">Effective: November 6, 2026 · Last updated: November 6, 2026</p>
-<p class="note">This policy describes how EQTune currently works and the Android services the app uses.</p>
+<p class="meta">Effective: November 6, 2026 · Last updated: November 11, 2026</p>
+<p class="note">This policy describes how EQTune currently works and the Android and third-party services the app uses.</p>
 </div>
 <section>
 <h2>1. Who we are</h2>
@@ -212,7 +245,8 @@ main>div{scroll-margin-top:90px}
 <li>The AI's audio analysis happens on the device. Audio is analyzed in memory and discarded; the microphone is not used.</li>
 <li><strong>Voice:</strong> when you dictate an adjustment, EQTune asks the voice service installed on the device for offline recognition and receives only the transcription. The voice service may still process the audio remotely, on its own servers, under its own policy.</li>
 <li><strong>Backup:</strong> Android backup may copy your presets and general preferences to your Google account. The AI's tonal profile and your headphone names are excluded from backup.</li>
-<li>This version of EQTune shows no ads and uses no analytics, tracking or crash-reporting tools.</li>
+<li>EQTune shows Google AdMob ads: a banner on the Home screen. Google's ads SDK may collect device data, such as the IP address and advertising identifiers (section 12). Where the law requires it, the app presents consent choices before any ad (section 13).</li>
+<li>There are no analytics, tracking or crash-reporting tools of Alleryon Labs' own.</li>
 </ul>
 </section>
 <section>
@@ -233,6 +267,7 @@ main>div{scroll-margin-top:90px}
 <li>AI tonal profile: four level averages per frequency range (bass, low mids, presence and treble) and the time already analyzed. The profile contains no audio or song names and can be erased in Settings › Data › Erase tonal profile.</li>
 <li>App preferences: theme, language and advanced mode.</li>
 <li>Temporary files: the file of an exported preset while you share it.</li>
+<li>Ads: the consent choices recorded by the UMP and the technical data stored by Google's ads SDK (sections 12 and 13).</li>
 </ul>
 <p>This data is kept in EQTune's private area and is removed when you clear the app's data or uninstall it.</p>
 </section>
@@ -251,7 +286,7 @@ main>div{scroll-margin-top:90px}
 </section>
 <section>
 <h2>7. Bluetooth and headphones</h2>
-<p>With the nearby devices permission, EQTune gets the name of the connected headphones, the connection type and the battery level they report. The name is used to recognize the model in the catalog built into the app and to remember each headphone's curve and preset. These preferences stay on the device, excluded from backup, and do not appear in the app's technical logs.</p>
+<p>With the nearby devices permission, EQTune gets the name of the connected headphones, the connection type and the battery level they report. The name is used to remember each headphone's profile, curve and preset and to check whether the chosen curve is for the same model. These preferences stay on the device, excluded from backup, and do not appear in the app's technical logs.</p>
 </section>
 <section>
 <h2>8. Voice recognition</h2>
@@ -268,64 +303,95 @@ main>div{scroll-margin-top:90px}
 </section>
 <section>
 <h2>10. Android backup and device transfer</h2>
-<p>If backup is turned on on your device, Android may copy to your Google account, and to a new device during a transfer, your presets, imported curves and general preferences (theme, advanced mode, AI options and per-style tweaks, and the speaker preset). EQTune's configuration excludes the AI's tonal profile and the preferences containing your headphone names from these routines. Backup is performed by the system, according to Google's settings and policy, and can be turned off in Android's settings.</p>
+<p>If backup is turned on on your device, Android may copy to your Google account, and to a new device during a transfer, your presets, imported curves and general preferences (theme, advanced mode, AI options and per-style tweaks, and the speaker preset). Ad consent choices and the technical data Google's SDKs store in the app's preferences may also be included. EQTune's configuration excludes the AI's tonal profile and the preferences containing your headphone names from these routines. Backup is performed by the system, according to Google's settings and policy, and can be turned off in Android's settings.</p>
 </section>
 <section>
 <h2>11. Third-party content and libraries</h2>
-<p>For use on the device itself, EQTune includes the OPRA preset library (CC BY-SA 4.0), data from the AutoEQ project (MIT), the YAMNet audio model (Apache 2.0) and a catalog of measurement curves. These components do not collect or send information. Credits and licenses are in About EQTune › Licenses and credits.</p>
+<p>For use on the device itself, EQTune includes the OPRA preset library (CC BY-SA 4.0), data from the AutoEQ project (MIT), the YAMNet audio model and LiteRT (Apache 2.0). These components do not collect or send information. The app also includes Google's ads and consent SDKs, described in sections 12 and 13. Credits and licenses are in About EQTune › Licenses and credits.</p>
 </section>
 <section>
-<h2>12. Advertising</h2>
-<p>This version of EQTune shows no ads and includes no advertising libraries. If ads are added, this policy will be updated beforehand with the advertising partner, the data used and your choices.</p>
+<h2>12. Advertising: Google AdMob</h2>
+<p>EQTune is free and shows Google AdMob ads: a single banner at the end of the Home screen. There are no full-screen, rewarded, native or app-open ads. No ad appears in the full-screen visualizer, on other screens or in the services that keep the sound working (system EQ and AI).</p>
+<p>Google's ads SDK (Google Mobile Ads SDK) runs inside the app and communicates directly with Google. According to Google's documentation, the SDK may automatically collect and share with Google, for advertising, analytics and fraud prevention:</p>
+<ul>
+<li>the IP address, which may be used to estimate the device's approximate location;</li>
+<li>interactions with the app and with ads, such as app launches, taps and views;</li>
+<li>diagnostic information, such as app launch time, hangs and energy use;</li>
+<li>device identifiers, such as the Android advertising ID, when available, and the app set ID.</li>
+</ul>
+<p>According to Google, this data is encrypted in transit. The SDK also stores technical data of its own on the device, in the app's preferences.</p>
+<p>EQTune does not request location permission from Android. As a result, neither the app nor the ads SDK can access the device's precise location (GPS or network): the location that may be associated with ads is the approximate one Google estimates from the IP address. Google's consent message may list purposes declared by ad partners, such as using precise geolocation data; in EQTune, that data is not available.</p>
+<p>EQTune does not send Google, for advertising purposes, your audio, the AI's analysis, presets, curves, headphone names, what is playing or voice transcriptions. The app requests only ads suitable for teens (Google's "T", Teen, rating) and is not tagged as directed to children (section 20).</p>
+<p>Google processes this data under its own policies. Alleryon Labs may access the reports and information Google makes available in AdMob, according to the service's settings and features.</p>
+<ul>
+<li>Google Privacy Policy: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+<li>How Google uses information from partner sites and apps: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+<li>My Ad Center: <a href="https://myadcenter.google.com/" rel="noopener">https://myadcenter.google.com/</a></li>
+</ul>
 </section>
 <section>
-<h2>13. Purposes of processing</h2>
-<p>EQTune processes information only on the device and only to perform the features you use: equalizing sound, remembering presets and preferences, recognizing your headphones, showing what is playing, running the AI and turning adjustment requests into filters.</p>
+<h2>13. Privacy choices and consent</h2>
+<p>EQTune integrates Google's User Messaging Platform (UMP) to present, where applicable, consent and privacy choices related to advertising. Whether these options are required, available and what they contain depends on your region and Google's settings — for example in the European Economic Area, the United Kingdom and Switzerland.</p>
+<ul>
+<li>Each time it opens, EQTune updates the consent information before requesting any ad. If the update is not possible (for example, offline) and no choice has been recorded yet, no ad is requested.</li>
+<li>Depending on your choices and your region, Google may show personalized, non-personalized or limited ads.</li>
+<li>When required by the UMP, EQTune offers Privacy choices in Settings (Data section), so your choices can be reviewed at any time.</li>
+<li>Your choices are recorded on the device by the UMP.</li>
+<li>The advertising ID can be reset or deleted in Android settings (under Privacy › Ads or Google › Ads, depending on the device).</li>
+</ul>
 </section>
 <section>
-<h2>14. Who information may be shared with</h2>
-<p>Alleryon Labs does not receive information from EQTune. Only the following leaves the device:</p>
+<h2>14. Purposes of processing</h2>
+<p>EQTune processes or transmits information only as needed to perform the features you use — equalizing sound, remembering presets and preferences, recognizing your headphones, showing what is playing, running the AI and turning adjustment requests into filters — and to enable advertising and your privacy choices (sections 12 and 13). Depending on the jurisdiction, processing may rely on your request, consent, legal obligations or other bases provided by applicable law.</p>
+</section>
+<section>
+<h2>15. Who information may be shared with</h2>
+<p>EQTune does not send Alleryon Labs information about you. Only the following leaves the device:</p>
 <ul>
 <li>the audio of your voice, processed by the voice recognition service you use (section 8);</li>
 <li>the data included in Android backup, when turned on (section 10);</li>
-<li>the files and values you decide to export, share or copy (section 9).</li>
+<li>the files and values you decide to export, share or copy (section 9);</li>
+<li>the data processed by Google's ads and consent SDKs, according to your choices (sections 12 and 13).</li>
 </ul>
 <p>Alleryon Labs does not sell personal information.</p>
 </section>
 <section>
-<h2>15. International transfers</h2>
-<p>EQTune does not transfer information. The voice recognition service and Android backup, when used, are provided by third parties such as Google, which may process information in countries other than yours under their own policies.</p>
+<h2>16. International transfers</h2>
+<p>EQTune has no server of its own and does not transfer information to Alleryon Labs. Only the information described in section 15 leaves the device: the data processed by Google's ads and consent SDKs, the audio of your voice when the voice recognition service processes it off the device, Android backup data, and the files you decide to export or share with another app or service. When you use "Copy values", the equalizer values go only to the device's own clipboard; they leave it only if you paste them into another app or service. Google and the other providers of these services may process this information in countries other than yours, under their own policies. Files you share go to the destination you choose and follow that destination's rules.</p>
 </section>
 <section>
-<h2>16. Retention</h2>
+<h2>17. Retention</h2>
 <ul>
 <li>Presets, curves and preferences: until you delete them, clear the app's data or uninstall it.</li>
 <li>Tonal profile: until you use Erase tonal profile, clear the app's data or uninstall it.</li>
 <li>Temporary exported files: until they are removed by the app or by Android.</li>
 <li>Now-playing information and voice transcriptions: not stored.</li>
+<li>Ad consent choices: on the device, until you change them, clear the app's data or uninstall it.</li>
+<li>Data collected by the ads SDK: under Google's retention policies.</li>
 </ul>
-<p>Data processed by the voice service and by Android backup follows the practices and policies of their providers.</p>
+<p>Data processed by Google for ads, by the voice service and by Android backup follows the practices and policies of their providers.</p>
 </section>
 <section>
-<h2>17. Security</h2>
-<p>Local data is kept in EQTune's private area, protected by Android. The app does not transmit this data over the network. The app's technical logs do not include headphone names or song titles. No system is completely immune to failures.</p>
+<h2>18. Security</h2>
+<p>Local data is kept in EQTune's private area, protected by Android. The app does not transmit this data over the network. The ads SDK's communication with Google is encrypted (TLS). The app's technical logs do not include headphone names or song titles. No system is completely immune to failures.</p>
 </section>
 <section>
-<h2>18. Your rights and choices</h2>
-<p>In the app or on your device you can delete presets and curves, erase the tonal profile in Settings › Data, turn off the AI, revoke the audio, Bluetooth and notification access permissions, turn off Android backup, clear the app's data and uninstall EQTune.</p>
+<h2>19. Your rights and choices</h2>
+<p>In the app or on your device you can delete presets and curves, erase the tonal profile in Settings › Data, turn off the AI, revoke the audio, Bluetooth and notification access permissions, turn off Android backup, review your ad choices in Settings › Privacy choices (where required in your region, section 13), reset or delete the advertising ID in Android settings, clear the app's data and uninstall EQTune.</p>
 <p>Depending on the law applicable in your region, you may also have rights related to access, correction, deletion, objection, restriction, portability, withdrawal of consent and complaints to a competent authority.</p>
 <p>Alleryon Labs does not keep a EQTune account or a user database. For questions or requests related to EQTune, write to <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a>. When a request involves data controlled directly by a third party, we may point you to the corresponding service.</p>
 </section>
 <section>
-<h2>19. Children</h2>
+<h2>20. Children</h2>
 <p>EQTune is intended for users aged 13 and older and is not specifically directed to children. The app does not ask for age or date of birth and does not provide features specifically designed for children. Minors should follow the rules applicable in their country and, where required, use the app with permission from a parent or guardian.</p>
+<p>Accordingly, for ads, EQTune is not tagged as directed to children, and the ads it requests are limited to content suitable for teens (Google's "T", Teen, rating).</p>
 </section>
 <section>
-<h2>20. Changes to this policy</h2>
+<h2>21. Changes to this policy</h2>
 <p>This policy may be updated when EQTune or the services it uses change. The current version is available on this page and in the app (About EQTune), with the date of the last update. Because EQTune has no registration of its own, we do not send email notices to all users.</p>
 </section>
 <section>
-<h2>21. Contact</h2>
+<h2>22. Contact</h2>
 <p>EQTune</p>
 <p>Published under the developer name Alleryon Labs</p>
 <p>Email: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>
@@ -335,8 +401,8 @@ main>div{scroll-margin-top:90px}
 <div id="es" hidden>
 <div class="hero">
 <h1>Política de Privacidad de EQTune</h1>
-<p class="meta">Vigencia: 6 de noviembre de 2026 · Última actualización: 6 de noviembre de 2026</p>
-<p class="note">Esta política describe el funcionamiento actual de EQTune y los servicios de Android que utiliza la aplicación.</p>
+<p class="meta">Vigencia: 6 de noviembre de 2026 · Última actualización: 11 de noviembre de 2026</p>
+<p class="note">Esta política describe el funcionamiento actual de EQTune y los servicios de Android y de terceros que utiliza la aplicación.</p>
 </div>
 <section>
 <h2>1. Quiénes somos</h2>
@@ -353,7 +419,8 @@ main>div{scroll-margin-top:90px}
 <li>El análisis de audio de la IA se realiza en el dispositivo. El audio se analiza en memoria y se descarta; no se usa el micrófono.</li>
 <li><strong>Voz:</strong> al dictar un ajuste, EQTune pide al servicio de voz instalado en el dispositivo un reconocimiento sin conexión y recibe solo la transcripción. Aun así, el servicio de voz puede procesar el audio de forma remota, en sus propios servidores, según su política.</li>
 <li><strong>Copia de seguridad:</strong> la copia de seguridad de Android puede copiar tus presets y preferencias generales a tu cuenta de Google. El perfil tonal de la IA y los nombres de tus auriculares quedan fuera de la copia de seguridad.</li>
-<li>Esta versión de EQTune no muestra anuncios y no usa herramientas de analítica, seguimiento ni informes de fallos.</li>
+<li>EQTune muestra anuncios de Google AdMob: un banner en la pantalla Inicio. El SDK de anuncios de Google puede recopilar datos del dispositivo, como la dirección IP e identificadores de publicidad (sección 12). Donde la ley lo exige, la app presenta las opciones de consentimiento antes de cualquier anuncio (sección 13).</li>
+<li>No hay herramientas propias de analítica, seguimiento ni informes de fallos de Alleryon Labs.</li>
 </ul>
 </section>
 <section>
@@ -374,6 +441,7 @@ main>div{scroll-margin-top:90px}
 <li>Perfil tonal de la IA: cuatro promedios de nivel por rango de frecuencia (graves, medios-graves, presencia y agudos) y el tiempo ya analizado. El perfil no contiene audio ni nombres de canciones y puede borrarse en Ajustes › Datos › Borrar perfil tonal.</li>
 <li>Preferencias de la app: tema, idioma y modo avanzado.</li>
 <li>Archivos temporales: el archivo de un preset exportado mientras lo compartes.</li>
+<li>Anuncios: las opciones de consentimiento registradas por la UMP y los datos técnicos guardados por el SDK de anuncios de Google (secciones 12 y 13).</li>
 </ul>
 <p>Estos datos se guardan en el área privada de EQTune y se eliminan cuando borras los datos de la app o la desinstalas.</p>
 </section>
@@ -392,7 +460,7 @@ main>div{scroll-margin-top:90px}
 </section>
 <section>
 <h2>7. Bluetooth y auriculares</h2>
-<p>Con el permiso de dispositivos cercanos, EQTune obtiene el nombre de los auriculares conectados, el tipo de conexión y el nivel de batería que informan. El nombre se usa para reconocer el modelo en el catálogo integrado en la app y para recordar la curva y el preset de cada auricular. Estas preferencias se quedan solo en el dispositivo, fuera de la copia de seguridad, y no aparecen en los registros técnicos de la app.</p>
+<p>Con el permiso de dispositivos cercanos, EQTune obtiene el nombre de los auriculares conectados, el tipo de conexión y el nivel de batería que informan. El nombre se usa para recordar el perfil, la curva y el preset de cada auricular y para comprobar si la curva elegida es del mismo modelo. Estas preferencias se quedan solo en el dispositivo, fuera de la copia de seguridad, y no aparecen en los registros técnicos de la app.</p>
 </section>
 <section>
 <h2>8. Reconocimiento de voz</h2>
@@ -409,64 +477,95 @@ main>div{scroll-margin-top:90px}
 </section>
 <section>
 <h2>10. Copia de seguridad y transferencia de Android</h2>
-<p>Si la copia de seguridad está activada en tu dispositivo, Android puede copiar a tu cuenta de Google, y a un dispositivo nuevo durante una transferencia, tus presets, curvas importadas y preferencias generales (tema, modo avanzado, opciones y ajustes por estilo de la IA y el preset del altavoz). La configuración de EQTune excluye de estas rutinas el perfil tonal de la IA y las preferencias con el nombre de tus auriculares. La copia la realiza el sistema, según la configuración y la política de Google, y puede desactivarse en los ajustes de Android.</p>
+<p>Si la copia de seguridad está activada en tu dispositivo, Android puede copiar a tu cuenta de Google, y a un dispositivo nuevo durante una transferencia, tus presets, curvas importadas y preferencias generales (tema, modo avanzado, opciones y ajustes por estilo de la IA y el preset del altavoz). También pueden incluirse las opciones de consentimiento de anuncios y los datos técnicos que los SDK de Google guardan en las preferencias de la app. La configuración de EQTune excluye de estas rutinas el perfil tonal de la IA y las preferencias con el nombre de tus auriculares. La copia la realiza el sistema, según la configuración y la política de Google, y puede desactivarse en los ajustes de Android.</p>
 </section>
 <section>
 <h2>11. Contenido y bibliotecas de terceros</h2>
-<p>Para su uso en el propio dispositivo, EQTune incluye la biblioteca de presets OPRA (CC BY-SA 4.0), datos del proyecto AutoEQ (MIT), el modelo de audio YAMNet (Apache 2.0) y un catálogo de curvas de medición. Estos componentes no recopilan ni envían información. Los créditos y las licencias están en Acerca de EQTune › Licencias y créditos.</p>
+<p>Para su uso en el propio dispositivo, EQTune incluye la biblioteca de presets OPRA (CC BY-SA 4.0), datos del proyecto AutoEQ (MIT), el modelo de audio YAMNet y LiteRT (Apache 2.0). Estos componentes no recopilan ni envían información. La app también incluye los SDK de anuncios y de consentimiento de Google, descritos en las secciones 12 y 13. Los créditos y las licencias están en Acerca de EQTune › Licencias y créditos.</p>
 </section>
 <section>
-<h2>12. Publicidad</h2>
-<p>Esta versión de EQTune no muestra anuncios y no incluye bibliotecas de publicidad. Si se incluyen anuncios, esta política se actualizará antes, con el socio publicitario, los datos utilizados y tus opciones.</p>
+<h2>12. Publicidad: Google AdMob</h2>
+<p>EQTune es gratuita y muestra anuncios de Google AdMob: un único banner, al final de la pantalla Inicio. No hay anuncios a pantalla completa, bonificados, nativos ni anuncios al abrir la app. Ningún anuncio aparece en el visualizador a pantalla completa, en las demás pantallas ni en los servicios que mantienen el sonido en funcionamiento (EQ del sistema e IA).</p>
+<p>El SDK de anuncios de Google (Google Mobile Ads SDK) funciona dentro de la app y se comunica directamente con Google. Según la documentación de Google, el SDK puede recopilar y compartir automáticamente con Google, para publicidad, análisis y prevención de fraudes:</p>
+<ul>
+<li>la dirección IP, que puede usarse para estimar la ubicación aproximada del dispositivo;</li>
+<li>interacciones con la app y con los anuncios, como la apertura de la app, toques y visualizaciones;</li>
+<li>información de diagnóstico, como el tiempo de apertura de la app, los bloqueos y el consumo de energía;</li>
+<li>identificadores del dispositivo, como el ID de publicidad de Android, cuando está disponible, y el ID del conjunto de apps.</li>
+</ul>
+<p>Según Google, estos datos se cifran en tránsito. El SDK también guarda en el dispositivo, en las preferencias de la app, datos técnicos propios.</p>
+<p>EQTune no pide a Android permiso de ubicación. Por eso, ni la app ni el SDK de anuncios pueden acceder a la ubicación precisa del dispositivo (GPS o red): la ubicación que puede asociarse a los anuncios es la aproximada, que Google estima a partir de la dirección IP. El mensaje de consentimiento de Google puede enumerar finalidades declaradas por los socios publicitarios, como el uso de datos de geolocalización precisa; en EQTune, esos datos no están disponibles.</p>
+<p>EQTune no envía a Google, con fines publicitarios, tu audio, el análisis de la IA, presets, curvas, nombres de auriculares, la música en reproducción ni transcripciones de voz. La app solo solicita anuncios adecuados para adolescentes (clasificación "T", Teen, de Google) y no está marcada como dirigida a niños (sección 20).</p>
+<p>Google trata estos datos según sus propias políticas. Alleryon Labs puede acceder a los informes y la información que Google pone a disposición en AdMob, según la configuración y las funciones del servicio.</p>
+<ul>
+<li>Política de Privacidad de Google: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+<li>Cómo utiliza Google la información de sitios y aplicaciones asociados: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Mi Centro de Anuncios: <a href="https://myadcenter.google.com/" rel="noopener">https://myadcenter.google.com/</a></li>
+</ul>
 </section>
 <section>
-<h2>13. Finalidades del tratamiento</h2>
-<p>EQTune trata la información solo en el dispositivo y solo para realizar las funciones que usas: ecualizar el sonido, recordar presets y preferencias, reconocer tus auriculares, mostrar lo que suena, aplicar la IA y convertir los pedidos de ajuste en filtros.</p>
+<h2>13. Opciones de privacidad y consentimiento</h2>
+<p>EQTune integra la User Messaging Platform (UMP) de Google para presentar, cuando corresponda, opciones de consentimiento y de privacidad relacionadas con la publicidad. La obligatoriedad, la disponibilidad y el contenido de estas opciones varían según tu región y la configuración de Google —por ejemplo, en el Espacio Económico Europeo, el Reino Unido y Suiza—.</p>
+<ul>
+<li>Cada vez que se abre, EQTune actualiza la información de consentimiento antes de solicitar cualquier anuncio. Si la actualización no es posible (por ejemplo, sin conexión) y todavía no hay una elección registrada, no se solicita ningún anuncio.</li>
+<li>Según tus elecciones y tu región, Google puede mostrar anuncios personalizados, no personalizados o limitados.</li>
+<li>Cuando la UMP lo exige, EQTune ofrece Opciones de privacidad en Ajustes (sección Datos), para que puedas revisar tus elecciones en cualquier momento.</li>
+<li>Tus elecciones quedan registradas en el dispositivo por la UMP.</li>
+<li>El ID de publicidad puede restablecerse o eliminarse en los ajustes de Android (en Privacidad › Anuncios o Google › Anuncios, según el dispositivo).</li>
+</ul>
 </section>
 <section>
-<h2>14. Con quién puede compartirse la información</h2>
-<p>Alleryon Labs no recibe información de EQTune. Solo sale del dispositivo:</p>
+<h2>14. Finalidades del tratamiento</h2>
+<p>EQTune trata o transmite información solo en la medida necesaria para realizar las funciones que usas —ecualizar el sonido, recordar presets y preferencias, reconocer tus auriculares, mostrar lo que suena, aplicar la IA y convertir los pedidos de ajuste en filtros— y para hacer posible la publicidad y tus opciones de privacidad (secciones 12 y 13). Según la jurisdicción, el tratamiento puede basarse en tu solicitud, en el consentimiento, en obligaciones legales o en otras bases previstas por la legislación aplicable.</p>
+</section>
+<section>
+<h2>15. Con quién puede compartirse la información</h2>
+<p>EQTune no envía a Alleryon Labs información sobre ti. Solo sale del dispositivo:</p>
 <ul>
 <li>el audio de tu voz, procesado por el servicio de reconocimiento de voz que uses (sección 8);</li>
 <li>los datos incluidos en la copia de seguridad de Android, cuando está activada (sección 10);</li>
-<li>los archivos y valores que decidas exportar, compartir o copiar (sección 9).</li>
+<li>los archivos y valores que decidas exportar, compartir o copiar (sección 9);</li>
+<li>los datos tratados por los SDK de anuncios y de consentimiento de Google, según tus elecciones (secciones 12 y 13).</li>
 </ul>
 <p>Alleryon Labs no vende información personal.</p>
 </section>
 <section>
-<h2>15. Transferencias internacionales</h2>
-<p>EQTune no transfiere información. El servicio de reconocimiento de voz y la copia de seguridad de Android, cuando se usan, los prestan terceros como Google, que pueden procesar información en países distintos del tuyo, según sus propias políticas.</p>
+<h2>16. Transferencias internacionales</h2>
+<p>EQTune no tiene servidor propio y no transfiere información a Alleryon Labs. Solo sale del dispositivo la información descrita en la sección 15: los datos tratados por los SDK de anuncios y de consentimiento de Google, el audio de tu voz cuando el servicio de reconocimiento de voz lo procesa fuera del dispositivo, los datos de la copia de seguridad de Android y los archivos que decidas exportar o compartir con otra app o servicio. Al usar "Copiar valores", los valores del ecualizador van solo al portapapeles del propio dispositivo; solo salen de él si los pegas en otra app o servicio. Google y los demás proveedores de estos servicios pueden procesar esta información en países distintos del tuyo, según sus propias políticas. Los archivos que compartes van al destino que elijas y siguen las reglas de ese destino.</p>
 </section>
 <section>
-<h2>16. Conservación</h2>
+<h2>17. Conservación</h2>
 <ul>
 <li>Presets, curvas y preferencias: hasta que los borres, borres los datos de la app o la desinstales.</li>
 <li>Perfil tonal: hasta que uses Borrar perfil tonal, borres los datos de la app o la desinstales.</li>
 <li>Archivos exportados temporales: hasta que la app o Android los eliminen.</li>
 <li>Información de la música en reproducción y transcripciones de voz: no se guardan.</li>
+<li>Opciones de consentimiento de anuncios: en el dispositivo, hasta que las cambies, borres los datos de la app o la desinstales.</li>
+<li>Datos recopilados por el SDK de anuncios: según las políticas de conservación de Google.</li>
 </ul>
-<p>Los datos tratados por el servicio de voz y por la copia de seguridad de Android siguen las prácticas y políticas de quienes prestan esos servicios.</p>
+<p>Los datos tratados por Google para anuncios, por el servicio de voz y por la copia de seguridad de Android siguen las prácticas y políticas de quienes prestan esos servicios.</p>
 </section>
 <section>
-<h2>17. Seguridad</h2>
-<p>Los datos locales se guardan en el área privada de EQTune, protegida por Android. La app no transmite estos datos por la red. Los registros técnicos de la app no incluyen nombres de auriculares ni títulos de canciones. Ningún sistema es totalmente inmune a fallos.</p>
+<h2>18. Seguridad</h2>
+<p>Los datos locales se guardan en el área privada de EQTune, protegida por Android. La app no transmite estos datos por la red. La comunicación del SDK de anuncios con Google está cifrada (TLS). Los registros técnicos de la app no incluyen nombres de auriculares ni títulos de canciones. Ningún sistema es totalmente inmune a fallos.</p>
 </section>
 <section>
-<h2>18. Tus derechos y opciones</h2>
-<p>En la propia app o en el dispositivo puedes borrar presets y curvas, borrar el perfil tonal en Ajustes › Datos, desactivar la IA, revocar los permisos de audio, Bluetooth y acceso a notificaciones, desactivar la copia de seguridad de Android, borrar los datos de la app y desinstalar EQTune.</p>
+<h2>19. Tus derechos y opciones</h2>
+<p>En la propia app o en el dispositivo puedes borrar presets y curvas, borrar el perfil tonal en Ajustes › Datos, desactivar la IA, revocar los permisos de audio, Bluetooth y acceso a notificaciones, desactivar la copia de seguridad de Android, revisar tus opciones de anuncios en Ajustes › Opciones de privacidad (cuando sea obligatorio en tu región, sección 13), restablecer o eliminar el ID de publicidad en los ajustes de Android, borrar los datos de la app y desinstalar EQTune.</p>
 <p>Dependiendo de la legislación aplicable en tu región, también puedes tener derechos relacionados con acceso, rectificación, eliminación, oposición, limitación, portabilidad, retirada del consentimiento y reclamaciones ante una autoridad competente.</p>
 <p>Alleryon Labs no mantiene cuentas de EQTune ni una base de datos de usuarios. Para dudas o solicitudes relacionadas con EQTune, escribe a <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a>. Cuando una solicitud involucre datos controlados directamente por un tercero, podremos indicarte el servicio correspondiente.</p>
 </section>
 <section>
-<h2>19. Menores</h2>
+<h2>20. Menores</h2>
 <p>EQTune está destinado a usuarios de 13 años o más y no está dirigido específicamente a niños. La aplicación no solicita edad ni fecha de nacimiento y no ofrece funciones diseñadas específicamente para niños. Los menores deben cumplir las normas aplicables en su país y, cuando sea necesario, utilizar la aplicación con autorización de un padre, madre o tutor.</p>
+<p>Por eso, en los anuncios, EQTune no está marcada como dirigida a niños, y los anuncios que solicita se limitan a contenido adecuado para adolescentes (clasificación "T", Teen, de Google).</p>
 </section>
 <section>
-<h2>20. Cambios en esta política</h2>
+<h2>21. Cambios en esta política</h2>
 <p>Esta política puede actualizarse cuando EQTune o los servicios que utiliza cambien. La versión vigente está disponible en esta página y en la propia aplicación (Acerca de EQTune), con la fecha de la última actualización. Como EQTune no tiene registro propio, no enviamos avisos por correo electrónico a todos los usuarios.</p>
 </section>
 <section>
-<h2>21. Contacto</h2>
+<h2>22. Contacto</h2>
 <p>EQTune</p>
 <p>Publicado bajo el nombre de desarrollador Alleryon Labs</p>
 <p>Correo electrónico: <a href="mailto:alleryonlabs@gmail.com">alleryonlabs@gmail.com</a></p>

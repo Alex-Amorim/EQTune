@@ -1,2 +1,2 @@
-# basslab
-BassLab - Privacy Policy
+# EQTune
+EQTune - Privacy Policy
